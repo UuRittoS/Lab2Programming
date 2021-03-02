@@ -1,0 +1,12 @@
+For cmd in Windows 
+C:\Users\Alibaba\Desktop\ITMO\Programming\Labs\project>"C:\Program Files\Java\jdk-14.0.2\bin\javac.exe" -d out\production\Programming -encoding "UTF-8" -classpath src\com\company\Pokemon.jar  src\com\company\*.java
+C:\Users\Alibaba\Desktop\ITMO\Programming\Labs\project\out\production\Programming>"C:\Program Files\Java\jdk-14.0.2\bin\java.exe" -cp .;com\company\Pokemon.jar  com.company.Lab2
+C:\Users\Alibaba\Desktop\ITMO\Programming\Labs\project\out\production\Programming>"C:\Program Files\Java\jdk-14.0.2\bin\jar.exe" -cfe com\company\Lab2.jar Main com\company\*.class
+C:\Users\Alibaba\Desktop\ITMO\Programming\Labs\project\out\production\Programming>"C:\Program Files\Java\jdk-14.0.2\bin\java.exe" -cp .;com\company\Pokemon.jar.;com\company\Lab2.jar com.company.Lab2
+
+
+for cmd in Linux
+javac -d out/production/Programming -encoding "UTF-8" -classpath src/com/company/Pokemon.jar  src/com/company/*.java
+java -cp .:com/company/Pokemon.jar  com.company.Lab2
+jar -cfe com/company/Lab2.jar Main com/company/*.class
+java -cp .:com\company\Pokemon.jar:com\company\Lab2.jar com.company.Lab2
